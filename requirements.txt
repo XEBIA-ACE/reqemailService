@@ -1,0 +1,3 @@
+# No base requirements.txt was provided.
+# For refactoring configuration to use environment variables for secrets, a typical helper is python-dotenv (optional, for local development), but unless specified in the upgrade context, do not add new dependencies.
+# The requirements.txt will remain empty unless the project already depended on a package for this purpose, which is not specified.
