@@ -20,9 +20,9 @@ N/A — not applicable to this task
 
 ## Phase 5 — Documentation & Rollout
 
-- [ ] [S] Update stack overview and architecture diagram in docs/README.md
-- [ ] [S] Update deployment instructions to reflect modernized stack in docs/deployment.md
-- [ ] [XS] Revise prerequisites and toolchain section in docs/deployment.md
-- [ ] [XS] Update troubleshooting section with known post-modernization issues in docs/operations.md
-- [ ] [XS] Amend changelog with modernization summary in CHANGELOG.md
-- [ ] [XS] Review and update runbook to align with the modernized deployment process in docs/runbook.md
+- [ ] [M] Update stack overview in README.md to reflect modernized components and dependencies  
+- [ ] [S] Update deployment instructions in DEPLOYMENT.md to match new stack and process  
+- [ ] [XS] Add details of stack changes in CHANGELOG.md under latest release section  
+- [ ] [XS] Review onboarding guide in docs/ONBOARDING.md for consistency with new deployment steps  
+- [ ] [S] Review and update runbook in docs/RUNBOOK.md for changes in operations and troubleshooting steps  
+- [ ] [XS] Link updated documentation in team knowledge base (docs/links.md)
