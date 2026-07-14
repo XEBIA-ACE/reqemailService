@@ -1,1 +1,2 @@
-# No dependencies to install for documentation-only update reflecting a modernized stack and deployment
+# No dependencies specified for the documentation update.
+# requirements.txt
