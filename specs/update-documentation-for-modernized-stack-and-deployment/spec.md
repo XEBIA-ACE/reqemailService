@@ -1,47 +1,45 @@
 ## Summary
 
-This spec covers the update of documentation to accurately reflect the modernized stack and deployment process. The outcome of this upgrade is that all user-facing and contributor documentation will correctly describe the current state of the technology stack and deployment procedures following recent modernization efforts.
+This spec covers the documentation updates required to reflect the modernized technology stack and deployment process. The expected outcome is comprehensive, accurate, and up-to-date documentation that matches the current stack and deployment workflows following modernization, ensuring users and developers can efficiently deploy and maintain the system.
 
 ## Motivation
 
-Outdated documentation can mislead engineers and operators, leading to reduced productivity, onboarding difficulties, and potential misconfigurations. Modernization of the stack (frameworks, deployment practices, etc.) requires that all related documentation be revised to prevent confusion and ensure up-to-date operational knowledge. While the overall urgency is rated as "medium," it is essential for the documentation to match the modernized components for compliance, maintainability, and operational efficiency.
+Clear, current documentation is critical for the maintainability, security, and operational efficiency of our system. Modernization efforts often introduce changes in configuration, architecture, and deployment requirements—omitting to update documentation can lead to misunderstandings, operational errors, and onboarding delays. The urgency for updating documentation is rated medium, in line with the overall upgrade urgency determined in the tech analysis.
 
 ## Current State
 
-- Documentation references legacy stack components and deployment practices.
-- Specific interface documentation, API references, configuration keys, and deployment steps are based on the pre-modernized environment.
-- Absence of details about language, runtime, and build tool due to unavailable information from the tech analysis.
-- N/A — not applicable to this task with respect to code elements, as the focus is strictly on documentation.
+The current state of documentation is not described in the tech analysis. Specific languages, runtimes, build tools, and other stack components referenced in the original documentation are unknown. As such, existing documentation may contain references to outdated procedures, tools, or configurations.
 
 ## Proposed Changes
 
-| Component                  | Before                                 | After                                   | Breaking? (Y/N) |
-|----------------------------|----------------------------------------|-----------------------------------------|-----------------|
-| Stack Overview Docs        | Describes legacy stack components      | Updated for modernized stack            | Y               |
-| Deployment Instructions    | Describes legacy deployment process    | Updated for modernized deployment flow  | Y               |
-| API/Interface Documentation| References deprecated components       | References modernized components        | Y               |
-| Configuration Examples     | Legacy config keys and formats         | Modernized keys and formats             | Y               |
+| Component           | Before                   | After                   | Breaking? (Y/N) |
+|---------------------|-------------------------|-------------------------|----------------|
+| Stack References    | Outdated or unknown     | Reflect modernized stack| Y              |
+| Deployment Guides   | Legacy workflows        | Updated deployment flows| Y              |
+| Configuration Docs  | Possibly outdated       | Align with new stack    | Y              |
+| Code Examples       | Unknown tech/language   | Modernized stack/language| Y             |
 
 ## Compatibility & Breaking Changes
 
-| Breaking Change                  | Migration Path     |
-|----------------------------------|-------------------|
-| Updated stack and deployment docs| Read new docs; migrate operational practices to documented procedures |
-| Obsolete instructions removed    | TODO              |
-| New configuration example formats| TODO              |
+| Breaking Change                            | Migration Path                                         |
+|--------------------------------------------|--------------------------------------------------------|
+| Outdated documentation references          | Update all documentation to match new stack and process|
+| Unsupported deployment steps in guides     | Remove/replace with modern equivalents                 |
+| Deprecated configuration/environment files | Document according to new configuration requirements   |
+| Unknown legacy code examples               | TODO — identify new examples to cover                 |
 
 ## Acceptance Criteria
 
-1. Given the documentation repository, when a user reviews stack overview pages, then all references match the modernized stack components as implemented.
-2. Given an engineer following the deployment instructions, when using the modernized stack, then the deployment process succeeds without reference to deprecated procedures or tools.
-3. Given configuration example sections, when copied and applied, then they result in successful component initialization in the modernized environment.
-4. Given references to previously available legacy components in documentation, when reviewed, then no such references remain unless explicitly needed for migration notes.
-5. All documentation changes pass a CI documentation linter (if available), or a manual review checklist verifying correspondence with the modernized stack.
+1. Given the modernized stack is deployed, when following the updated documentation, then a user can replicate a successful deployment without legacy steps.
+2. Given a new developer accesses the documentation, when searching for stack requirements, then only currently supported technologies are referenced.
+3. Given the latest configuration files, when cross-checked with configuration documentation, then all keys and values are fully described and accurate.
+4. Given deprecation of old deployment tools, when reviewing the documentation, then no references to unsupported tools or processes exist.
 
 ## Open Questions
 
-| #  | Question                                                                              | Owner (or TODO) | Due Date (or TODO) |
-|----|---------------------------------------------------------------------------------------|-----------------|--------------------|
-| 1  | What is the full list of modernized stack components to be included in the documentation update? | TODO            | TODO               |
-| 2  | Who will be responsible for approving updated documentation for accuracy?              | TODO            | TODO               |
-| 3  | Are there user or operator guides that require a separate review beyond technical docs? | TODO            | TODO               |
+| #  | Question                                      | Owner         | Due Date   |
+|----|-----------------------------------------------|--------------|------------|
+| 1  | What specific frameworks/tools are in the upgraded stack? | TODO         | TODO       |
+| 2  | Are there any new compliance or security documentation standards post-modernization? | TODO         | TODO       |
+| 3  | Who is responsible for validating updated documentation accuracy? | TODO         | TODO       |
+| 4  | Are there legacy environments we still need to document for? | TODO         | TODO       |
