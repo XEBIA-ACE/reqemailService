@@ -1,0 +1,16 @@
+# requirements.txt
+
+# Backend testing frameworks for Python
+pytest==7.4.4
+pytest-cov==4.1.0
+
+# API testing tools
+requests==2.31.0
+
+# Linting and code quality tools (optional, for test suite improvements)
+flake8==7.0.0
+
+# Coverage reporting (if needed for compliance)
+coverage==7.3.2
+
+# Add any additional dependencies required for CarePay application backend tests below
