@@ -1,0 +1,4 @@
+# No original requirements.txt was provided.
+# Generating a minimal requirements.txt for Python 3.12 runtime pinning.
+
+python==3.12
